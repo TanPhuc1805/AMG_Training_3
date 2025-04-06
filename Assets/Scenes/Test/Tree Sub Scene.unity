@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4167697952541417071, guid: 1673425018cd39746b7cfed0c68b5c31, type: 3}
   spawnAmount: 1
-  spawnTime: 20
+  spawnTime: 60
 --- !u!4 &914959739
 Transform:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2954062793217423338, guid: 2924cd34331d2ad45b81733092c2f017, type: 3}
   spawnAmount: 1
-  radius: 20
+  radius: 30
   spawnTime: 2
 --- !u!4 &1072126891
 Transform:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6062933343359146390, guid: 06057faad082b5d4f8434407a7379336, type: 3}
   spawnAmount: 1
-  spawnTime: 5
+  spawnTime: 10
 --- !u!4 &1331521783
 Transform:
   m_ObjectHideFlags: 0
@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capacity: 1000
+  radius: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
