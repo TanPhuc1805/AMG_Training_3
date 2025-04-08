@@ -12,6 +12,7 @@ public class LumberjackAuthoring : MonoBehaviour
     public float moveSpeed = 2f; // Tốc độ di chuyển của người khai thác gỗ
     public float attackDamage = 5f; // Tốc độ tấn công của người khai thác gỗ
     public float attackCooldown = 1f; // Thời gian chờ giữa các lần tấn công
+    public GameObject effectPrefab; // Prefab của hiệu ứng level up
 
     // Baker chuyển đổi MonoBehaviour thành Component ECS
     public class LumberjackBaker : Baker<LumberjackAuthoring>
@@ -50,6 +51,7 @@ public class LumberjackAuthoring : MonoBehaviour
                 Level = 1,
                 MaxLevel = 5, 
             });
+            
             
         }
     }

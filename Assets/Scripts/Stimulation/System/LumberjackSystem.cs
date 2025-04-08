@@ -44,7 +44,6 @@ public partial struct LumberjackSystem : ISystem
                 var treeHP = SystemAPI.GetComponent<HPComponent>(moveTo.ValueRW.entityTarget);
                 treeHP.HP -= attack.ValueRO.AttackDamage; // Giảm HP của cây
                 SystemAPI.SetComponent(moveTo.ValueRW.entityTarget, treeHP); // Cập nhật lại HP cây
-                Debug.Log("TreeHP: " + treeHP.HP);
 
                 if (treeHP.IsDead)
                 {
@@ -60,8 +59,6 @@ public partial struct LumberjackSystem : ISystem
                     {
                         spawnedTrees.RemoveAtSwapBack(index); // Xóa cây khỏi danh sách ngay lập tức
                     }
-
-                    Debug.Log("Tree " + moveTo.ValueRW.entityTarget.Index + " has been destroyed.");
 
                     if(capacity.ValueRO.IsFull) {
                         // Nếu đã đủ gỗ, quay về homebase
@@ -124,7 +121,6 @@ public partial struct LumberjackSystem : ISystem
         foreach (var (home, capacity, entity) in SystemAPI.Query<RefRW<HomeTag>, RefRW<CapacityComponent>>().WithEntityAccess())
         {
             homebase = entity; // Lấy entity homebase đầu tiên tìm thấy
-            Debug.Log("Homebase found: " + homebase.Index);
         }
         return homebase;
     }

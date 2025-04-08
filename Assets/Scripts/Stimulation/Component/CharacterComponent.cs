@@ -39,3 +39,14 @@ public struct SpawnConfig : IComponentData
 
 }
 
+// Component đánh dấu đây là hiệu ứng level up
+public struct LevelUpEffectTag : IComponentData {}
+
+// Component chứa thiết lập cho hiệu ứng level up
+public struct LevelUpEffectComponent : IComponentData
+{
+    public Entity EffectPrefab;
+    public float Duration; // Thời gian tồn tại của hiệu ứng
+}
+
+public struct DestroyWhenTimerCompletedTag : IComponentData {}

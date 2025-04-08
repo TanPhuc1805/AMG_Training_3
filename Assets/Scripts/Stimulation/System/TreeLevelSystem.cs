@@ -30,10 +30,9 @@ public partial struct TreeLevelSystem : ISystem
             {
                 // Tăng cấp độ
                 level.ValueRW.Level++;
-                Debug.Log("Level: " + level.ValueRW.Level);
                 
                 // Tăng kích thước cây trong khi giữ nguyên vị trí
-                localTransform.ValueRW.Scale += 15f;
+                localTransform.ValueRW.Scale += 20f;
                 
                 // Reset timer
             }

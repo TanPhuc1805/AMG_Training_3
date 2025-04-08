@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b00d03c48dc5c47a35b7373f477832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  attackDamage: 10
-  attackCooldown: 0.5
+  moveSpeed: 2
+  attackDamage: 5
+  attackCooldown: 1
+  effectPrefab: {fileID: 0}

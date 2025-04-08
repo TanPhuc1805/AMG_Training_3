@@ -115,7 +115,6 @@ public partial class SpawnTreeSystem : SystemBase
         foreach (var (home, capacity, entity) in SystemAPI.Query<RefRW<HomeTag>, RefRW<CapacityComponent>>().WithEntityAccess())
         {
             homebase = entity; // Lấy entity homebase đầu tiên tìm thấy
-            Debug.Log("Homebase found: " + homebase.Index);
         }
         return homebase;
     }

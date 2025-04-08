@@ -123,4 +123,6 @@ MonoBehaviour:
     type: 3}
   positionPrefab: {fileID: 2510883774999647525, guid: a4d86b76d6090884e819384ef8d24ff5,
     type: 3}
+  effectPrefab: {fileID: 4638712882946042690, guid: 9029beab0dd9eb84aade1739487ed290,
+    type: 3}
   woodAmount: 100

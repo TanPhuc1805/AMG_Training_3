@@ -51,6 +51,7 @@ public class BuilderAuthoring : MonoBehaviour
             {
                 Amount = authoring.woodAmount 
             });
+            
 
         }
     }
